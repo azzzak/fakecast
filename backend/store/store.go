@@ -96,6 +96,10 @@ func NewStore(root string) (Store, error) {
 			episode INTEGER DEFAULT 0
 		)
 		`)
+	if err != nil {
+		return Store{}, &Error{Err: err}
+	}
+
 	err = tx.Commit()
 	if err != nil {
 		return Store{}, &Error{Err: err}
