@@ -1,4 +1,4 @@
-# fakecast [![Go Report Card](https://goreportcard.com/badge/github.com/azzzak/fakecast)](https://goreportcard.com/report/github.com/azzzak/fakecast)
+# fakecast
 
 Fakecast is the tool for broadcsting audiofiles as a podcast. It can be used for listening content hasn't been presented on popular podcasting platforms. Also you can maintain a secret podcast to friends of yours.
 
