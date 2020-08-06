@@ -6,7 +6,7 @@ Fakecast is the tool for broadcsting audiofiles as a podcast. It can be used for
 
 ## Run
 
-`docker run -p 80:80 -v $(pwd)/content:/fakecast -e HOST=http://localhost -e CREDENTIAL=user:password azzzak/fakecast`
+`docker run -d -p 80:80 -v $(pwd)/content:/fakecast -e HOST=http://localhost -e CREDENTIAL=user:password azzzak/fakecast`
 
 Then open _HOST_ URL in a browser.
 
