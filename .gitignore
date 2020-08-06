@@ -1,0 +1,5 @@
+/frontend/node_modules/
+/backend/front
+/content
+.DS_Store
+*.zip
