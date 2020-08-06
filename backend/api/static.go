@@ -1,7 +1,9 @@
 package api
 
 import (
+	"fmt"
 	"net/http"
+	"os"
 	"path/filepath"
 	"strings"
 
@@ -19,6 +21,10 @@ func (nfs protect) Open(path string) (http.File, error) {
 	}
 
 	s, err := f.Stat()
+	if err != nil {
+		fmt.Fprintln(os.Stderr, "Error while opening static file")
+	}
+
 	if s.IsDir() {
 		index := filepath.Join(path, "index.html")
 		if _, err := nfs.fs.Open(index); err != nil {
