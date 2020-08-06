@@ -1,6 +1,5 @@
 .PHONY: image push tag
-# NAME		:= azzzak/fakecast
-NAME		:= fakecast
+NAME		:= azzzak/fakecast
 VER			:= `cat VERSION`
 GIT_VER	:= v${VER}
 IMAGE		:= ${NAME}:${VER}
